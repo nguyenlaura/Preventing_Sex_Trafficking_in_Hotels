@@ -1,18 +1,29 @@
 from __future__ import print_function
-import csv, multiprocessing, cv2, os
+import csv, multiprocessing
+import cv2, os
 import numpy as np
 import urllib
 import urllib.request
+import ssl
 
 class AppURLopener(urllib.request.FancyURLopener):
     version = "Mozilla/5.0"
 
-opener = AppURLopener()
+
 def url_to_image(url):
-    resp = opener.open(url)
+    context = ssl._create_unverified_context()
+    resp = urllib.request.urlopen(url, context=context)
     image = np.asarray(bytearray(resp.read()), dtype="uint8")
     image = cv2.imdecode(image, cv2.IMREAD_UNCHANGED)
     return image
+
+# def download_file(download_url):
+#     response = urllib2.urlopen(download_url)
+#     f = open("the_downloaded_file.pdf", 'wb')
+#     f.write(response.read())
+#     f.close()
+
+# download_file("some url to pdf here")
 
 # chain,hotel,im_source,im_id,im_url
 def download_and_resize(imList):
@@ -30,16 +41,20 @@ def download_and_resize(imList):
                     width = 640
                     height = round((640 * img.shape[0]) / img.shape[1])
                     img = cv2.resize(img,(width, height))
+                    print('we did it!')
                 else:
                     height = 640
                     width = round((640 * img.shape[1]) / img.shape[0])
                     img = cv2.resize(img,(width, height))
+                    print('cool!')
                 cv2.imwrite(savePath,img)
                 print('Good: ' + savePath)
+
             else:
                 print('Already saved: ' + savePath)
-        except:
-            print('Bad: ' + savePath)
+        except Exception as e:
+            print(e)
+            # print('Bad: ' + savePath)
 
 def main():
     hotel_f = open('./input/dataset/hotel_info.csv','r')
