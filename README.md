@@ -1,5 +1,9 @@
 # Preventing Sex Trafficking in Hotels
 
+<img src="readme_imgs/hospitality.jpg"
+     alt="stop human trafficking in hotels"
+     style="float: left; margin-right: 10px;" />
+
 ## Table of Contents
 1. [Description](#description)
 2. [Data Overview](#DataOverview)
@@ -48,14 +52,17 @@ The six chosen hotel chain files contained over 1000 images each totalling 14,08
      alt="Hilton"
      style="float: left; margin-right: 10px;" />
      
+### Roadblocks
+As shown above, hotel images vary wildly. Some travel websites may offer images of amenities such as pools or spas which are not as relevant to the purpose of preventing human sex trafficking. Knowing this, I think it would be helpful to cleanse these images or categorize them by type whether that be an image of a room, a bathroom, and more.
+
 ## Modeling <a name="Modeling"></a>
 Modeling proved quite challenging because of how long it takes to train a model using CNN. Hyperparameter tuning is important to adjust these models' performance. Overall, fine-tuning the model hyperparameters didn't improve the test accuracy score much whereas the training data accuracy score would sometimes improve at anywhere from 20 percent to 50 percent accuracy. This implies that the model is over fitting to the training dataset most of the time. The test dataset often scored around 20 to 30 percent accuracy.
 
-<img src="readme_imgs/Hyperparameter_Tuning"
+<img src="readme_imgs/Hyperparameter_Tuning.png"
      alt="Hyperparameter tuning"
      style="float: left; margin-right: 10px;" />
 
-<img src="readme_imgs/Model_Summary"
+<img src="readme_imgs/Model_Summary.png"
      alt="Model summary"
      style="float: left; margin-right: 10px;" />
      
