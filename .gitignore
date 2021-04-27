@@ -4,3 +4,5 @@ images/*/*/*/*.jpg
 images/*/*/*.jpg
 images
 input
+.DS_Store
+.ipynb_checkpoints/hotels_code-checkpoint.ipynb
