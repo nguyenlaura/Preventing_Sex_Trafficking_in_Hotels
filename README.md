@@ -52,11 +52,19 @@ The six chosen hotel chain files contained over 1000 images each totalling 14,08
      alt="Hilton"
      style="float: left; margin-right: 10px;" />
      
-### Roadblocks
+#### Note
 As shown above, hotel images vary wildly. Some travel websites may offer images of amenities such as pools or spas which are not as relevant to the purpose of preventing human sex trafficking. Knowing this, I think it would be helpful to cleanse these images or categorize them by type whether that be an image of a room, a bathroom, and more.
 
+
 ## Modeling <a name="Modeling"></a>
-Modeling proved quite challenging because of how long it takes to train a model using CNN. Hyperparameter tuning is important to adjust these models' performance. Overall, fine-tuning the model hyperparameters didn't improve the test accuracy score much whereas the training data accuracy score would sometimes improve at anywhere from 20 percent to 50 percent accuracy. This implies that the model is over fitting to the training dataset most of the time. The test dataset often scored around 20 to 30 percent accuracy.
+
+#### Base Model
+The base model is to predict the most frequent class--which in this case is Hyatt hotels with 4,244 images. The base model of predicting a hotel image as Hilton is 24 percent.
+
+#### Hyperparameter Tuning
+Modeling proved quite challenging because of how long it takes to train a model using CNN. Hyperparameter tuning is important to adjust these models' performance. To start, the model structure used originally has three relu activated layers, a dropout rate of 0.5 and learning rate at 0.01. The following models are examples of fine-tuned models.
+
+Overall, fine-tuning the model hyperparameters didn't improve the test accuracy score much whereas the training data accuracy score would sometimes improve at anywhere from 20 percent to 50 percent accuracy. This implies that the model is over fitting to the training dataset most of the time. The test dataset often scored around 20 to 30 percent accuracy.
 
 <img src="readme_imgs/Hyperparameter_Tuning.png"
      alt="Hyperparameter tuning"
@@ -84,8 +92,6 @@ The images below is a performance and model summary of a short model with 5 epoc
      alt="Model summary"
      style="float: left; margin-right: 10px;" />
      
-#### Base Model
-The base model is to predict the most frequent class--which in this case is Hyatt hotels with 4,244 images. The base model of predicting a hotel image as Hyatt is 24 percent.
 
 ## Summary <a name="Summary"></a>
 ### Next steps
