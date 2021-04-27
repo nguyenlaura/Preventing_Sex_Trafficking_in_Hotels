@@ -95,7 +95,7 @@ The images below is a performance and model summary of a short model with 5 epoc
 
 ## Summary <a name="Summary"></a>
 ### Next steps
-I was challenged by how finnicky the model is and how much attention it requires, but I am optimistic that with more data and hyperparameter tuning, the model can successfully identify hotel chains by their images. Some of the images vary location to location with some containing food or people--perhaps a more thorough cleansing of the images for future iterations may improve the process.
+I was challenged by how finnicky the model is and how much attention it requires, but I am optimistic that with more data and hyperparameter tuning, the model can successfully identify hotel chains by their images. Some of the images vary location to location with some containing food or people--perhaps a more thorough cleansing of the images for future iterations may improve the process. Eventually, I hope to introduce more images that are of quality and are organized. The original dataset contains occlusions/people-shaped masks that I hope to implement to recreate real-world victim scenes.
 
 ## Citation
 
