@@ -60,7 +60,25 @@ Modeling proved quite challenging because of how long it takes to train a model 
 
 <img src="readme_imgs/Hyperparameter_Tuning.png"
      alt="Hyperparameter tuning"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px;" />'
+     
+The following model has great training performances, however the validation loss decreases or fluctuates wildly while the validation accuracy stays around 23 percent."  
+
+<img src="readme_imgs/mod3.png"
+     alt="Hyperparameter tuning"
+     style="float: left; margin-right: 10px;" />'
+
+As it turns out through hyperparameter tuning, a larger batch size gives a lower test accuracy around 24 percent and higher validation accuracy around 25 percent. Additionally, validation loss stays around 1.7 and slowly goes down with more epochs. This may be worth investing in for future iterations with more epochs.
+
+<img src="readme_imgs/mod4.png"
+     alt="Hyperparameter tuning"
+     style="float: left; margin-right: 10px;" />'
+
+The images below is a performance and model summary of a short model with 5 epochs and a batch size of 70. The validation accuracy is as high as 28 percent with low test accuracy around 24 percent and validation loss at the high 1.7 mark. 
+
+<img src="readme_imgs/mod5.png"
+     alt="Hyperparameter tuning"
+     style="float: left; margin-right: 10px;" />'
 
 <img src="readme_imgs/Model_Summary.png"
      alt="Model summary"
@@ -71,7 +89,7 @@ The base model is to predict the most frequent class--which in this case is Hyat
 
 ## Summary <a name="Summary"></a>
 ### Next steps
-I was challenged by how finnicky the model is and how much attention it requires, but I am optomistic that with more data and hyperparameter tuning, the model can successfully identify hotel chains by their images. Some of the images vary location to location with some containing food or people--perhaps a more thorough cleansing of the images for future iterations may improve the process.
+I was challenged by how finnicky the model is and how much attention it requires, but I am optimistic that with more data and hyperparameter tuning, the model can successfully identify hotel chains by their images. Some of the images vary location to location with some containing food or people--perhaps a more thorough cleansing of the images for future iterations may improve the process.
 
 ## Citation
 
