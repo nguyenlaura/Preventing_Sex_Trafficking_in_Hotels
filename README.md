@@ -68,7 +68,8 @@ I was challenged by how finnicky the model is and how much attention it requires
 
 ## Citation
 
-```authors: Stylianou, Abby and Xuan, Hong and Shende, Maya and Brandt, Jonathan and Souvenir, Richard and Pless, Robert,
+```
+authors: Stylianou, Abby and Xuan, Hong and Shende, Maya and Brandt, Jonathan and Souvenir, Richard and Pless, Robert,
 title: Hotels-50K: A Global Hotel Recognition Dataset,
 booktitle: The AAAI Conference on Artificial Intelligence (AAAI),
 year: 2019
@@ -77,4 +78,5 @@ author: Matthew Lavietes,
 title: "Top hotels sued for 'industry-wide failures' to prevent U.S. sex trafficking",
 link: https://www.reuters.com/article/us-trafficking-hotels-usa/top-hotels-sued-for-industry-wide-failures-to-prevent-u-s-sex-trafficking-idUSKBN1YE074,
 year: 2019
+```
 
